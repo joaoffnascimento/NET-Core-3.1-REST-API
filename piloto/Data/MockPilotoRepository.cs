@@ -5,7 +5,7 @@ namespace piloto.Data
 {
     public class MockPilotoRepository : IPilotoRepository
     {
-        public IEnumerable<Piloto> getAllPiloto()
+        public IEnumerable<Piloto> getAllPilotos()
         {
             var pilotos = new List<Piloto>{
                 new Piloto { Id = 1, Nome = "Michael Schumacher", Idade = 52, Equipe = "Ferrari" },

@@ -5,7 +5,7 @@ namespace piloto.Data
 {
     public interface IPilotoRepository {
 
-        IEnumerable<Piloto> getAllPiloto();
+        IEnumerable<Piloto> getAllPilotos();
         Piloto getPilotoById(int id);
     }
 }
