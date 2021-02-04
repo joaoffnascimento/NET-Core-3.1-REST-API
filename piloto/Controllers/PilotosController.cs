@@ -9,8 +9,12 @@ namespace piloto.Controllers
     [ApiController]
     public class PilotosController : ControllerBase
     {
+        private readonly IPilotoRepository _repository;
 
-        private readonly MockPilotoRepository _repository = new MockPilotoRepository();
+        public PilotosController(IPilotoRepository repository)
+        {
+            _repository = repository;
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<Piloto>> GetAllPilotos()
